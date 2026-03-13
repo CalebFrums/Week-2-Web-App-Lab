@@ -1,0 +1,23 @@
+@model ActionResultInASPNETCoreMVC.Models.Product
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+<div class="text-left">
+    <p>Product ID: @Model.Id</p>
+    <p>Product Name: @Model.Name</p>
+</div>
+
+<hr />
+<h3>Demo Links</h3>
+<ul>
+    <li><a href="/Home/ProductPartial">Task 2: Partial View</a></li>
+    <li>
+        <form method="get" action="/Home/DownloadFile" style="display:inline">
+            <button type="submit">Task 3: Download File (PDF)</button>
+        </form>
+    </li>
+    <li><a href="/Home/GoToMoodle">Task 4: Redirect to Moodle</a></li>
+    <li><a href="/Home/NotFoundExample">Task 5: 404 Not Found</a></li>
+    <li><a href="/Home/CustomStatusCodeExample">Task 5: 403 Forbidden</a></li>
+</ul>
