@@ -1,0 +1,28 @@
+@using System.Text.Json
+@using Lecture3Demo.Models
+@{
+    Layout = null;
+    var studentJson = TempData["StudentJson"] as string;
+    Student? student = studentJson != null ? JsonSerializer.Deserialize<Student>(studentJson) : null;
+}
+<!DOCTYPE html>
+<html>
+<head><title>TempData - Complex Object</title></head>
+<body>
+    <h1>TempData with Complex Object</h1>
+    @if (student != null)
+    {
+        <div>StudentId : @student.StudentId</div>
+        <div>Name : @student.Name</div>
+        <div>Branch : @student.Branch</div>
+        <div>Section : @student.Section</div>
+        <div>Gender : @student.Gender</div>
+    }
+    else
+    {
+        <p>(No student data — TempData was already consumed or not set)</p>
+    }
+    <br />
+    <a href="/">Back to Home</a>
+</body>
+</html>

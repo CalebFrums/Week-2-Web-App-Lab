@@ -1,0 +1,21 @@
+@model Lecture3Demo.Models.Student
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Student Details</title>
+</head>
+<body>
+    <h1>Student Details (Strongly Typed View)</h1>
+    <div>StudentId : @Model.StudentId</div>
+    <div>Name : @Model.Name</div>
+    <div>Branch : @Model.Branch</div>
+    <div>Section : @Model.Section</div>
+    <div>Gender : @Model.Gender</div>
+    <br />
+    <a href="/">Back to Home</a>
+</body>
+</html>

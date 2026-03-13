@@ -1,0 +1,20 @@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <h1>@ViewBag.Header</h1>
+    <div>StudentId : @ViewBag.Student?.StudentId</div>
+    <div>Name : @ViewBag.Student?.Name</div>
+    <div>Branch : @ViewBag.Student?.Branch</div>
+    <div>Section : @ViewBag.Student?.Section</div>
+    <div>Gender : @ViewBag.Student?.Gender</div>
+    <br />
+    <a href="/">Back to Home</a>
+</body>
+</html>

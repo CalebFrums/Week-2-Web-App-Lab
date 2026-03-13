@@ -1,0 +1,15 @@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head><title>TempData - About</title></head>
+<body>
+    <h1>TempData Demo - About Page</h1>
+    <p>Name: @(TempData["Name"] ?? "(empty — TempData was consumed)")</p>
+    <p>Role: @(TempData["Role"] ?? "(empty — TempData was consumed)")</p>
+    <p><em>No Keep() call — TempData is gone after being read once.</em></p>
+    <br />
+    <a href="/">Back to Home</a>
+</body>
+</html>

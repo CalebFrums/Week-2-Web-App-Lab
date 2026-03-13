@@ -1,0 +1,16 @@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head><title>TempData - Privacy</title></head>
+<body>
+    <h1>TempData Demo - Privacy Page</h1>
+    <p>Name: @TempData["Name"]</p>
+    <p>Role: @TempData["Role"]</p>
+    <p><em>Keep() was called in the controller — data persists here.</em></p>
+    <br />
+    <a href="/Home/TempDataAbout">Go to About (TempData will now be gone)</a><br />
+    <a href="/">Back to Home</a>
+</body>
+</html>

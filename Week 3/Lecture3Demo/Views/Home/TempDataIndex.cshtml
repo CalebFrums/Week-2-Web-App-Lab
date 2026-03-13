@@ -1,0 +1,17 @@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head><title>TempData - Index</title></head>
+<body>
+    <h1>TempData Demo - Index Page</h1>
+    <p>Name: @TempData["Name"]</p>
+    <p>Role: @TempData["Role"]</p>
+    <p><em>TempData has been set and Keep() called — navigate below to see it persist.</em></p>
+    <br />
+    <a href="/Home/TempDataPrivacy">Go to Privacy (TempData should still be there)</a><br />
+    <a href="/Home/TempDataAbout">Go to About (TempData will be gone)</a><br />
+    <a href="/">Back to Home</a>
+</body>
+</html>
